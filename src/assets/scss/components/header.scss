@@ -1,0 +1,214 @@
+// для каждого компонента нужно импортить переменные, чтобы их использовать
+@import "../main/parameters";
+
+.container {
+    width: 100%;
+    max-width: 1680px;
+    margin: 0 auto;
+}
+.header-wrapper {
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-block1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 0 0 33%;
+    max-width: 33%;
+}
+.logo {
+    border-right: 1px solid #D9E8F5;;
+    &-link {}
+    &-img {}
+}
+.licence {
+    padding-left: 10px;
+    &-img {}
+}
+.header-block2 {
+    flex: 0 0 33%;
+    max-width: 33%;
+    display: flex;
+    justify-content: center;
+    
+}
+.nav {
+    margin: 0 auto;
+    &-list {
+        display: flex;
+    }
+    &-li {
+    }
+    &-link {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 150%;
+        color: #272727;
+        padding: 10px 15px;
+        transition: background 0.4s;
+        position: relative;
+        &.active,
+        &:hover {
+            color: #2A63A9;
+            &::after {
+                position: absolute;
+                content: "...";
+                bottom: 0;
+                font-size: 30px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}
+.header-block3 {
+    display: flex;
+    justify-content: flex-end;
+    flex: 0 0 33%;
+    max-width: 33%;
+    align-items: center;
+}
+.contacts {}
+.tel-number {
+    padding-right: 10px;
+    &-link {
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 150%;
+        color: #272727;
+        font-weight: 600;
+    }
+}
+.socials {
+    padding-left: 10px;
+    &-img {
+        fill: rgb(255, 255, 255);
+        width: 50px;
+        height: 50px;
+        margin: 0 5px;
+        background: #2A63A9;
+        border-radius: 50%;
+        padding: 13px;
+    }
+}
+.header-wr {
+    background-image: url(../imgs/family-bg.jpg);
+    background-size: cover;
+    position: relative;
+    &::after {
+        position: absolute;
+        content:"";
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 30vh;
+        background-image: url(../imgs/divider.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+.header-inner {
+    display: flex;
+}
+.header-inner-block1 {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0 0;
+    flex: 0 0 50%;
+    max-width: 50%;
+    z-index: 1;
+}
+.info1 {
+    border-left: 2px solid #2A63A9;
+    padding: 5px 0;
+    &-p {
+        font-size: 20px;
+        line-height: 150%;
+        color: #2A63A9;
+        padding-left: 5px;
+    }
+}
+.info2 {
+    padding: 15px 0;
+    &-p {
+        font-size: 60px;
+        line-height: 120%;
+        color: #272727;
+        font-weight: 600;
+        &-clr {
+            color: #2A63A9;
+        }
+    }
+}
+.info3 {
+    padding: 35px 0;
+    &-link {
+        text-decoration: none;
+        background: linear-gradient(180deg, #2A63A9 0%, #86C4FF 0.01%, #2A63A9 6.77%, #00C2FF 84.37%, #40D1FF 100%);
+        box-shadow: 0px 5px 10px #04B8F7;
+        border-radius: 100px;
+        padding: 10px 25px;
+        color: #fff;
+    }
+    &-p {
+        padding: 20px 0 0 22px;
+        font-size: 12px;
+        line-height: 150%;
+        color: rgba(39, 39, 39, 0.5);
+    }
+}
+.info4 {
+    display: flex;
+    justify-content: space-between;
+    &-inner {
+        text-align: center;
+        flex: 0 0 22%;
+        max-width: 22%;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1), 0px 0px 0px 10px rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
+        &-wr {
+            display: inline-block;
+            position: relative;
+            padding: 40px 0;
+            &-img {
+                width: 102px;
+                height: 102px;
+                fill: rgba(64, 209, 255, 0.5);
+            }
+            &-img2 {
+                &-wr {
+                    background-color: #fff;
+                    border-radius: 50%;
+                    width: 70px;
+                    height: 70px;
+                    padding: 15px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+            
+        } 
+        &-p {
+            font-size: 18px;
+            line-height: 150%;
+            color: #272727;
+            padding: 10px 0;
+        }
+    }
+}
+
+.header-inner-block2 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 60px 0 0 10px;
+    &-img {
+
+    }
+}
